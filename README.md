@@ -1,24 +1,30 @@
 # tg-bot-tester
 
-Telegram bot tester
+JS Framwork for integration testing telegram bots
+ 
+# Use
 
+- Open a dialogue with the bot
+- Press F12 to open the debugger.
+- Paste there all the test code and library
+- We are waiting for the completion of tests
 
-# JS фраимворк для интеграционного тестирования телеграм ботов
+# Example
 
+```
+// Send a message
+await sendMessage ('Hello, it test message')
 
-Вне зависимости от того на чём написан ваш телеграм бот его нужно тестировать.
-Эта библиотека предоставляет удобный api для быстрого написания интеграционных тестов для телеграм ботов.
+// Check the contents of the bot response
+await lastMessageTextHas("Nice to meet you!")
 
+// Press the button with title `EN`
+await btnClickByName('EN')
 
-Для запуска теста
+// wait 3 seconds
+await wait(3000) 
 
+// Check the contents of the bot response
+await lastMessageTextHas("Goodbye")
+```
 
-Первый вызов
-await loadJs();
-
-  await loadJs();
-
-    await sendMessage('!reset')
-
-
-tg-bot-tester
