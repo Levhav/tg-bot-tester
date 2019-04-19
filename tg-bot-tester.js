@@ -167,6 +167,6 @@ btnClickByName = async function(Name, time = 1700)
 await loadJs();
 
 // Example
-await wait();
-await sendMessage('Hello, it test message')
+//await wait();
+//await sendMessage('Hello, it test message')
 
